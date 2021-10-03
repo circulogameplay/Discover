@@ -1,0 +1,148 @@
+Vamos praticar o que aprendemos.
+
+Crie um projeto contendo
+2 arquivos no diretório principal (index.html e contact.html)
+1 diretório de nome: files
+dentro desse diretório adicione 2 imagens da sua preferência e 1 arquivo de nome images.html, que irá listar as imagens
+Dentro de cada arquivo .html, você deverá colocar:
+
+Menu de navegação com uma lista <li></li> não ordenada <ul></ul>
+título <h1></h1> da página
+Um mais parágrafos <p></p> com informações da página
+A Navegação
+
+Para o menu de navegação use a tag <nav></nav> e coloque a lista não ordenada como conteúdo da tag.
+
+O conteúdo do link deverá ser o nome da página .html que existe no projeto, sendo que para cada página, iremos ter um link.
+
+Ao clicarmos no link, deveremos ser direcionados à página clicada.
+
+Páginas imagens.html
+
+Como conteúdo desta página, além do que foi pedido, adicionar também
+
+As duas imagens que você tem na pasta;
+Use a tag p para colocar a tag img.
+obs: imagens de tamanho muito grande, poderão não se adaptar bem, mas não se preocupe com isso agora, pois logo aprenderemos a como melhorar isso.
+
+Página contact.html
+
+Como conteúdo desta página, além do que foi pedido, adicionar também:
+Colocar suas informações de contato: email e telefone;
+Cada informação deverá estar dentro de um link que quando clicado, irá abrir a respectiva informação de contato (email ou telefone)
+Dicas
+
+Para o conteúdo da tag <p></p>, se desejar, poderá fazer o uso do atalholorem que existe no Visual Studio Code.
+Para isso digite lorem e em seguida aperte tab.
+atenção: alguns computadores isso pode não funcionar, portanto, ão atenha a isso e continue o exercício sem essa dica.
+
+Bom exercício.
+
+
+
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Homepage</a>
+            </li>
+            <li>
+                <a href="files/images.html">Minhas Imagens</a>
+            </li>
+            <li>
+                <a href="contact.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+
+    <h1>Homepage</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deleniti qui possimus eaque consectetur itaque animi. Pariatur voluptates illum deserunt assumenda! Doloribus in asperiores eos sapiente ea fugit perferendis repellat.</p>
+</body>
+</html>
+contact.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Homepage</a>
+            </li>
+            <li>
+                <a href="files/images.html">Minhas Imagens</a>
+            </li>
+            <li>
+                <a href="contact.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Contato</h1>
+
+    <p>Fale comigo</p>
+
+    <ul>
+        <li>
+            <a href="mailto:meuemail.com">meuemail@email.com</a>
+        </li>
+        <li>
+            <a href="tel:8877776666">(88) 7777 6666</a>
+        </li>
+    </ul>
+</body>
+</html>
+imagens.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Homepage</a>
+            </li>
+            <li>
+                <a href="images.html">Minhas Imagens</a>
+            </li>
+            <li>
+                <a href="../contact.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Minhas imagens</h1>
+
+    <p>Olha isso!</p>
+
+    <p>
+        <img src="./1.jpeg" alt="Imagem 1">
+        <img src="./2.jpeg" alt="Imagem 2">
+    </p>
+    
+</body>
+</html>
